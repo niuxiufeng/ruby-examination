@@ -17,3 +17,25 @@
  hello,/nruby/n
  ```
  
+## 2. step, times, upto, downto methods
+
+ ### step
+ object.step(limit, stepon){ |x|  
+ do something...  
+ }  
+ when loop (object + stepon * index) > limit ,exit the loop **index** from 0, add 1 step 
+ 
+ ```
+ 1.2.step(4.8, 1.4){|x|    # 1
+ puts x
+ }
+ ```
+ 
+ ### result
+ ```
+ 1.2
+ 2.599999999996
+ 4.0
+ ```
+ 
+ ### times 
